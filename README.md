@@ -28,7 +28,6 @@ The paper argues that **conscious models**—globally accessible, self-referenti
 Suggested structure (adapt names as needed to match your actual files):
 
 ```
-.
 ├── README.md
 ├── paper/
 │   ├── main.tex      # Main LaTeX source
@@ -41,8 +40,8 @@ Suggested structure (adapt names as needed to match your actual files):
 ```
 ---
 ## **3. Building the Paper**
-### **3.1 Requirements**
 
+### **3.1 Requirements**
 Install any modern LaTeX distribution, e.g.:
 - **TeX Live** (Linux/macOS/Windows) 
 - **MacTeX** (macOS)
@@ -57,6 +56,7 @@ The paper uses only standard packages:
 - hyperref
 
 No BibTeX/BibLaTeX setup is required in the current version; citations are defined with thebibliography.
+
 ### **3.2 Build commands**
 From the repo root (adjust for your actual file path):
 
@@ -81,8 +81,10 @@ You can move or copy it into build/ if you want a clean separation of source vs.
 
 ---
 ## **4. Core Thesis**
+
 ### **4.1 One-sentence version**  
 > **To get real AGI in an open-ended world, you need an internal conscious model: a globally accessible, self-referential, temporally deep world-and-self model that lives in the control loop.**
+
 ### **4.2 Slightly longer version**
 The paper defines a **conscious model** in strictly functional/architectural terms (no metaphysical commitments):
 - A **limited-capacity global workspace** whose contents are available to perception, memory, planning, language, and motor systems.
@@ -96,12 +98,13 @@ The central claim (the **Conscious Model Thesis**) is:
 
 ---
 ## **5. Conceptual Map of the Paper**
-
 This section is a high-level guide so you can jump around the TeX file intelligently.
+
 ### **5.1 Introduction**
 - Frames the gap between current foundation models and genuine AGI.    
 - Sets up the question: is more scale enough, or is a new architectural ingredient required?
 - Answers: that ingredient is a **conscious model**.
+
 ### **5.2 Background: AGI and Consciousness**
 - Defines AGI as **embedded, autonomous, open-ended general intelligence** (not just benchmark scores).    
 - Distinguishes:
@@ -115,6 +118,7 @@ This section is a high-level guide so you can jump around the TeX file intellige
     - Attention schema
     
 - Shows how these converge on similar architectural motifs: global broadcast, self-models, temporally deep control.
+
 ### **5.3 The Conscious Model Thesis**
 - Gives a precise definition of a **conscious model** in an artificial agent (global accessibility, self-modeling, situatedness, temporally deep simulation, control relevance).    
 - Argues the thesis along four main axes:
@@ -124,7 +128,6 @@ This section is a high-level guide so you can jump around the TeX file intellige
     4. **Alignment, value grounding, and interpretability**
 
 ### **5.4 Requirements for Conscious Models in AGI**
-
 Specifies design constraints:
 - **Representational**:
     - Multimodal integration
@@ -144,9 +147,10 @@ Specifies design constraints:
     - Workspace W_t
     - Actions A_t
     - Simple update equations showing how these interact.
-### **5.5 Non-Conscious vs Conscious Architectures**
 
+### **5.5 Non-Conscious vs Conscious Architectures**
 Compares:
+
 - **Scaled LLM-style models** (feedforward/autoregressive):
     - No durable self, no grounded world model, no explicit control interface.
     
@@ -171,7 +175,6 @@ Sketches several families of architectures:
 ### **5.7 Evaluating Machine Consciousness for AGI**
 
 Proposes multi-layer evaluation:
-
 - **Behavioral**:    
     - Coherent reporting of internal states,
     - Error awareness and correction,
@@ -187,15 +190,14 @@ Proposes multi-layer evaluation:
 ### **5.8 Objections and Replies**
 
 Addresses:
-
 - “Intelligence doesn’t require consciousness.”    
 - “Consciousness will emerge automatically at scale.”
 - “Conscious AGI is too dangerous or unethical; avoid it.”
 - “This doesn’t solve the hard problem.”
 
 The replies lean heavily on **engineering constraints** (resource-bounded, learnable, maintainable architectures) instead of metaphysics.
-### **5.9 Implications, Roadmap, and Conclusion**
 
+### **5.9 Implications, Roadmap, and Conclusion**
 - Architecture matters more than pure scale.    
 - Embodiment, continual interaction, and meta-cognition should be central design targets.
 - Conscious models may **improve safety** by making internal states more interpretable.
@@ -207,8 +209,8 @@ The replies lean heavily on **engineering constraints** (resource-bounded, learn
 
 ---
 ## **6. How to Use This Repo**
-### **6.1 If you’re a reader / theorist**
 
+### **6.1 If you’re a reader / theorist**
 Build the PDF and use it as:
 
 - **Position paper** in AGI discussions.
@@ -235,7 +237,6 @@ notebooks/
 ```
 
 Possible experiment ideas directly inspired by the paper:
-
 - Compare agents **with vs. without** a global workspace on tasks that require long-horizon credit assignment and cross-modal integration. 
 
 - Study how an explicit **self-model** affects:
@@ -244,10 +245,9 @@ Possible experiment ideas directly inspired by the paper:
     - and consistency in self-referential reporting.
     
 - Implement a simple **simulation-based meta-controller** and measure whether explicitly representing counterfactual futures in a workspace improves safety and performance. 
+
 ### **6.3 If you’re doing alignment / safety work**
-
 Use the conscious model as a **natural alignment interface**:
-
 - Define constraints and value structures **inside the conscious model**, not scattered across opaque weights.    
 
 - Design tools that:
@@ -257,7 +257,6 @@ Use the conscious model as a **natural alignment interface**:
 
 ---
 ## **7. Extending the Paper**
-
 Future extensions you can track as issues / milestones:
 
 - **More formal theory**    
@@ -297,10 +296,7 @@ Future extensions you can track as issues / milestones:
 
 ---
 ## **10. Contact / Links**
-
-Add whatever you want here:
-
 - Contact email
 	- isonpayton@gmail.com
 - Project page / personal site
-	- https://x.com/p8on_
+	- <https://x.com/p8on_>
